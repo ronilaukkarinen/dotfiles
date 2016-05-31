@@ -9,3 +9,7 @@ My CentOS server [Peikko](http://peikko.us) uses a simple prompt with processor 
 ![](https://raw.githubusercontent.com/ronilaukkarinen/dotfiles/master/osx.png "OS X shell")
 
 OS X prompt is mostly [mathiasbynens'](https://github.com/mathiasbynens/dotfiles).
+
+## Usage
+
+Git clone and use as you wish or symlink to your locations and get updates with `git pull`.
