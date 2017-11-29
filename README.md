@@ -1,14 +1,10 @@
 # Rolle's dotfiles
 
-Using bash daily on Mac and Linux. These are my dotfiles for backup purposes. Some stuff are from [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles).
+Using bash daily on Mac and Linux. These are my dotfiles for backup purposes. Inspired by others. Includes modified dracula theme for Hyper.
 
-![](https://raw.githubusercontent.com/ronilaukkarinen/dotfiles/master/server.png "Server shell")
+![](https://rolle.wtf/dotfiles-hyper.png "Screenshot")
 
-My CentOS server [Peikko](http://peikko.us) uses a simple prompt with processor temperature.
-
-![](https://raw.githubusercontent.com/ronilaukkarinen/dotfiles/master/osx.png "OS X shell")
-
-OS X prompt is mostly [mathiasbynens'](https://github.com/mathiasbynens/dotfiles).
+My CentOS server [Peikko](http://peikko.us) uses a simple prompt with processor temperature, [screenshot here](https://raw.githubusercontent.com/ronilaukkarinen/dotfiles/master/server.png).
 
 ## Usage
 
