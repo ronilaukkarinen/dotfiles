@@ -145,4 +145,6 @@ else
    echo -e "   ${WHITE}plexmediaserver: ${RED}$PLEXACTIVE${WHITE}"
 fi
 
+echo -e "  ${WHITE}nextcloud:       ${GREEN}active${WHITE} - https://nextcloud.peikko.us"
+
 echo ''
