@@ -105,42 +105,42 @@ echo -e "  load average: $LOADAVG" |lolcat
 
 if pgrep -x "jackett" >/dev/null
 then
-    echo -e "  ${WHITE}Jackett:         ${GREEN}active${WHITE} (https://jackett.peikko.us)"
+    echo -e "  ${WHITE}Jackett:         ${GREEN}active${WHITE} - https://jackett.peikko.us"
 else
     echo -e "  ${WHITE}Jackett:         ${RED}stopped"
 fi
 
 if pgrep -fl "Tautulli.py" >/dev/null
 then
-    echo -e "  ${WHITE}Tautulli:        ${GREEN}active${WHITE} (https://tautulli.peikko.us)"
+    echo -e "  ${WHITE}Tautulli:        ${GREEN}active${WHITE} - https://tautulli.peikko.us"
 else
     echo -e "  ${WHITE}Tautulli:        ${RED}stopped"
 fi
 
 if pgrep -fl "SickBeard.py" >/dev/null
 then
-    echo -e "  ${WHITE}SickChill:       ${GREEN}active${WHITE} (https://sickchill.peikko.us)"
+    echo -e "  ${WHITE}SickChill:       ${GREEN}active${WHITE} - https://sickchill.peikko.us"
 else
     echo -e "  ${WHITE}SickChill:       ${RED}stopped"
 fi
 
 if pgrep -fl "watcher.py" >/dev/null
 then
-    echo -e "  ${WHITE}Watcher:         ${GREEN}active${WHITE} (https://watcher.peikko.us)"
+    echo -e "  ${WHITE}Watcher:         ${GREEN}active${WHITE} - https://watcher.peikko.us"
 else
     echo -e "  ${WHITE}Watcher:         ${RED}stopped"
 fi
 
 SYNCACTIVE=`systemctl show -p ActiveState resilio-sync | sed 's/ActiveState=//g'`
 if [ "$SYNCACTIVE" == "active" ]; then
-    echo -e "  ${WHITE}resilio-sync:    ${GREEN}$SYNCACTIVE${WHITE} (https://sync.peikko.us)"
+    echo -e "  ${WHITE}resilio-sync:    ${GREEN}$SYNCACTIVE${WHITE} - https://sync.peikko.us"
 else
    echo -e "   ${WHITE}resilio-sync:    ${RED}$SYNCACTIVE${WHITE}"
 fi
 
 PLEXACTIVE=`systemctl show -p ActiveState plexmediaserver | sed 's/ActiveState=//g'`
 if [ "$PLEXACTIVE" == "active" ]; then
-    echo -e "  ${WHITE}plexmediaserver: ${GREEN}$PLEXACTIVE${WHITE} (https://app.plex.tv)"
+    echo -e "  ${WHITE}plexmediaserver: ${GREEN}$PLEXACTIVE${WHITE} - https://app.plex.tv"
 else
    echo -e "   ${WHITE}plexmediaserver: ${RED}$PLEXACTIVE${WHITE}"
 fi
