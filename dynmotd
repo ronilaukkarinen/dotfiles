@@ -117,12 +117,12 @@ else
     echo -e "  ${WHITE}Tautulli:        ${RED}stopped"
 fi
 
-if pgrep -fl "CouchPotato.py" >/dev/null
-then
-    echo -e "  ${WHITE}CouchPotato:     ${GREEN}active${WHITE} - https://couchpotato.peikko.us"
-else
-    echo -e "  ${WHITE}CouchPotato:     ${RED}stopped"
-fi
+#if pgrep -fl "CouchPotato.py" >/dev/null
+#then
+#    echo -e "  ${WHITE}CouchPotato:     ${GREEN}active${WHITE} - https://couchpotato.peikko.us"
+#else
+#    echo -e "  ${WHITE}CouchPotato:     ${RED}stopped"
+#fi
 
 if pgrep -fl "SickBeard.py" >/dev/null
 then
