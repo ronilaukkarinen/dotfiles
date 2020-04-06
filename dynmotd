@@ -117,6 +117,13 @@ else
     echo -e "  ${WHITE}Tautulli:        ${RED}stopped"
 fi
 
+if pgrep -fl "Lidarr.exe" >/dev/null
+then
+    echo -e "  ${WHITE}Lidarr:          ${GREEN}active${WHITE} - https://lidarr.peikko.us"
+else
+    echo -e "  ${WHITE}Lidarr:          ${RED}stopped"
+fi
+
 #if pgrep -fl "CouchPotato.py" >/dev/null
 #then
 #    echo -e "  ${WHITE}CouchPotato:     ${GREEN}active${WHITE} - https://couchpotato.peikko.us"
