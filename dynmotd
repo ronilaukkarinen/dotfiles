@@ -142,7 +142,7 @@ SYNCACTIVE=`systemctl show -p ActiveState resilio-sync | sed 's/ActiveState=//g'
 if [ "$SYNCACTIVE" == "active" ]; then
     echo -e "  ${WHITE}resilio-sync:    ${GREEN}$SYNCACTIVE${WHITE} - https://sync.peikko.us"
 else
-   echo -e "   ${WHITE}resilio-sync:    ${RED}$SYNCACTIVE${WHITE}"
+   echo -e "  ${WHITE}resilio-sync:    ${RED}$SYNCACTIVE${WHITE}"
 fi
 
 PLEXACTIVE=`systemctl show -p ActiveState plexmediaserver | sed 's/ActiveState=//g'`
@@ -153,5 +153,6 @@ else
 fi
 
 echo -e "  ${WHITE}nextcloud:       ${GREEN}active${WHITE} - https://nextcloud.peikko.us"
+echo -e "  ${WHITE}tt-rss:          ${GREEN}active${WHITE} - https://rss.peikko.us"
 
 echo ''
