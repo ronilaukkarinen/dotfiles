@@ -160,6 +160,6 @@ else
 fi
 
 echo -e "  ${WHITE}nextcloud:       ${GREEN}active${WHITE} - https://nextcloud.peikko.us"
-echo -e "  ${WHITE}tt-rss:          ${GREEN}active${WHITE} - https://rss.peikko.us"
+#echo -e "  ${WHITE}tt-rss:          ${GREEN}active${WHITE} - https://rss.peikko.us"
 
 echo ''
