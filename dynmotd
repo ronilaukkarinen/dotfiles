@@ -138,19 +138,19 @@ else
     echo -e "  ${WHITE}SickChill:       ${RED}stopped"
 fi
 
-if pgrep -fl "watcher.py" >/dev/null
-then
-    echo -e "  ${WHITE}Watcher:         ${GREEN}active${WHITE} - https://watcher.peikko.us"
-else
-    echo -e "  ${WHITE}Watcher:         ${RED}stopped"
-fi
+#if pgrep -fl "watcher.py" >/dev/null
+#then
+#    echo -e "  ${WHITE}Watcher:         ${GREEN}active${WHITE} - https://watcher.peikko.us"
+#else
+#    echo -e "  ${WHITE}Watcher:         ${RED}stopped"
+#fi
 
-if pgrep -fl "rslsync" >/dev/null
-then
-    echo -e "  ${WHITE}resilio-sync:    ${GREEN}active${WHITE} - https://sync.peikko.us"
-else
-   echo -e "  ${WHITE}resilio-sync:    ${RED}stopped${WHITE}"
-fi
+#if pgrep -fl "rslsync" >/dev/null
+#then
+#    echo -e "  ${WHITE}resilio-sync:    ${GREEN}active${WHITE} - https://sync.peikko.us"
+#else
+#   echo -e "  ${WHITE}resilio-sync:    ${RED}stopped${WHITE}"
+#fi
 
 PLEXACTIVE=`systemctl show -p ActiveState plexmediaserver | sed 's/ActiveState=//g'`
 if [ "$PLEXACTIVE" == "active" ]; then
