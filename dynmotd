@@ -131,6 +131,13 @@ else
     echo -e "  ${WHITE}Radarr:          ${RED}stopped"
 fi
 
+if pgrep -fl "Sonarr.exe" >/dev/null
+then
+    echo -e "  ${WHITE}Sonarr:          ${GREEN}active${WHITE} - https://sonarr.peikko.us"
+else
+    echo -e "  ${WHITE}Sonarr:          ${RED}stopped"
+fi
+
 if pgrep -fl "/usr/local/bin/flood" >/dev/null
 then
     echo -e "  ${WHITE}Flood:           ${GREEN}active${WHITE} - https://flood.peikko.us"
@@ -145,12 +152,12 @@ fi
 #    echo -e "  ${WHITE}CouchPotato:     ${RED}stopped"
 #fi
 
-if pgrep -fl "SickChill.py" >/dev/null
-then
-    echo -e "  ${WHITE}SickChill:       ${GREEN}active${WHITE} - https://sickchill.peikko.us"
-else
-    echo -e "  ${WHITE}SickChill:       ${RED}stopped"
-fi
+#if pgrep -fl "SickChill.py" >/dev/null
+#then
+#    echo -e "  ${WHITE}SickChill:       ${GREEN}active${WHITE} - https://sickchill.peikko.us"
+#else
+#    echo -e "  ${WHITE}SickChill:       ${RED}stopped"
+#fi
 
 #if pgrep -fl "watcher.py" >/dev/null
 #then
