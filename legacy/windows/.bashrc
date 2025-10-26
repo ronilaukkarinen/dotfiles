@@ -14,10 +14,6 @@ alias s='git status'
 alias a='git add --all'
 alias c='git commit -m'
 alias p='git push -u origin master'
-alias xonotic='ssh rolle@135.181.93.2'
-alias irc='ssh rolle@139.59.208.244'
-alias peikko='ssh -p 12523 rolle@peikko.us'
-alias peikko_local='ssh -p 12523 rolle@192.168.2.100'
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
