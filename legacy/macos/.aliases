@@ -48,5 +48,4 @@ alias -- -="cd -"
 
 # Functions as aliases
 function plugins() { ssh vagrant@10.1.2.3 "cd /var/www/$@/;/usr/bin/wp plugin list"; }
-function updateplugin() { scp -r $@ 'rolle@185.87.110.7:/var/www/plugins.dude.fi/public_html/'; }
 function imagesize() { convert "$@" -print "Size: %wx%h\n" /dev/null; }
